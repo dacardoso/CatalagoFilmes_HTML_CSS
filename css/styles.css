@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root{
+    --bg-gray: #ddd;
+    --color-primary: #4D41C0;
+    --white: #fff;
+    --text-gray: #4a4a4a;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html,body{
+    background-color: var(--bg-gray);
+}
+
+header{
+    background-color: var(--color-primary);
+    color: var(--white) ;
+    height: 60px;
+    display: flex;
+    align-items: center;   
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h1{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+nav a{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+a, a:hover{
+    text-decoration: none;
+    color: unset
+}
+
+.filme-container{
+display: flex;
+align-items: center;
+}
+
+.filme-container img{
+    margin: 6px;
+}
+
+#filme-card-list{
+    padding: 40px 0;
+}
+
+.fime-card{
+    width: 100%;
+}
+
+.fime-card img{   
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.filme-card-descricao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px 20px 20px;
+    background-color: #fff;
+    border-radius: 0 0 8px 8px;
+    min-height: 150px;
+    justify-content: space-between;
+}
+
+.filme-card-descricao h3{
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.filme-btn, .filme-btn:hover {
+    width: 180px;
+    height: 40px;
+    background-color: var(--color-primary);
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
